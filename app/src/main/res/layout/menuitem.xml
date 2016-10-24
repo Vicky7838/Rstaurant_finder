@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vicky.restaurantfinder.Main11Activity">
+    <!-- tools:showIn="@layout/app_bar_restaurant">-->
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="4dp"
+        android:background="#8C9EFF"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:elevation="2dp"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/item"
+android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+
+                android:layout_below="@+id/item" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/rounded"
+                android:padding="5dp"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:id="@+id/button4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
